@@ -27,6 +27,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
+//login User
 router.post("/login", async (req, res) => {
     const {error}=req.body;
     if(error) return res.status(500).json(error[0].message)
